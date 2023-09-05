@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ let count = 0;
+
+function cc(card) {
+  // Only change code below this line
+let cars = card.split(",");
+for (let i=0;i<card.length;i++){
+  if(card[i]==2||card[i]==3||card[i]==4||card[i]==5||card[i]==6){
+    count++;
+  }else if(card[i]=='10'||card[i]=='J'||card[i]=='Q'||card[i]=='K'||card[i]=='A'){
+    count--;
+  }
+}
+return(count<0)?`${count} Bet`:`${count} Hold`;
+
+  return "Change Me";
+  // Only change code above this line
+}
+
+console.log (cc("K,Q,A,10"))
+    </script>
+</body>
+</html>

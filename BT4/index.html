@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        let products = [
+            { id: 1, name: "Milk", count: 100},
+            {id: 2, name: "Yakult", count: 100},
+            {id: 3, name: "Butter", count: 100},
+            ];
+        let obj = {
+            id: 4,
+            name: "vina",
+            count: 100,
+        }
+        for(let i=0;i<products.length;i++){
+            if(products[i].id==2){
+                products.splice(i,1)
+            }
+        }
+        for(let i=0;i<products.length;i++){
+            if(products[i].id==3){
+                products[i].count = 0
+            }
+        }
+        for(let i=0;i<products.length;i++){
+            if(products[i].name=="Butter"){
+                console.log(products[i])
+            }else{
+                console.log("Khong co du lieu ban tim")
+            }
+        }
+
+        products.push(obj)
+        console.log(products)
+      </script>
+</body>
+</html>

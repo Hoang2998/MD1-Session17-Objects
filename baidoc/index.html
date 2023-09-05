@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- OOP : lập trình hướng đối tượng 
+        có 4 tính chất:
+        1. đóng gói
+        2. kế thừa
+        3. trừu tượng
+        4. đa hình
+        OBJECT
+        - là một đối tương bao gồm :
+            + thuộc tính (property)
+            + phương thức (method)
+        -các cách để khởi tạo đối tượng
+        c1: let , const , var
+        c2: function 
+            - đăt tên theo Pascalcase viết hoa chữ cái đầu mỗi từ 
+        c3: class
+             
+        object chứa các cặp key(thuộc tính) và value
+        các cặp key và value ngăn cách nhau bằng dâú ,
+        ************* 
+        CRUD với object
+        C: Creat để thêm thuọc tính cho đối tượng thì đối tượng.thuộc tính = giá trị;
+            - obj["ten key moi"]=gia tri
+        R: Read 
+        For-in : trả về tên key(thuốc tính của đối tượng)
+        U: Update đối tượng gán lại giá trị cho nó
+        D: delete xóa đối tượng cú pháp delete nameObject.key;
+        
+        các cách CLONE object
+        DEEP CLONE && SHAWLLOW CLONE
+        Shallow clone (clone nông) không clone hết đươc các phần tử object trong object ban đầu
+        vì nó chỉ clone địa chỉ của object phần tử đó sang object mới và địa chỉ đó sẽ cùng trỏ đến một giá trị
+        obj2 = {...obj1}
+        object.assign({},obj1,obj2)
+        DEEPCLONE 
+        chuyển sang kiểu JSON
+        cấu trúc obj2 = JSON.parse(JSON.stringfy(obj1));
+        1 toán tử Spread
+
+    -->
+     <script>
+        // let student={
+        //     name:"abc",
+        //     age:23, 
+        // }
+
+        // student.address="hai phong";
+        // console.log(student);
+        // for(const abc in student){
+        //     console.log(student[abc]);}
+        // for(const abc in student){
+        //     if(student[abc]=="hai phong"){
+        //         console.log(abc)
+        //     }
+        // }
+        let obj1 = {
+            name: "hoang",
+            age:25,
+        }
+        let obj2 = {...obj1}
+        console.log(obj2)
+     </script>
+</body>
+</html>
